@@ -1,0 +1,5 @@
+# Core: installs on native Windows (agent, MCP server, orchestrator)
+pyyaml
+mcp
+cocotb
+numpy

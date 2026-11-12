@@ -1,0 +1,13 @@
+# Local LLM served via any OpenAI-compatible endpoint.
+# Ollama:    ollama serve ; ollama pull qwen2.5-coder:14b
+# llama.cpp: llama-server -m model.gguf --port 8080  (base_url http://localhost:8080/v1)
+llm:
+  base_url: http://localhost:11434/v1
+  model: qwen2.5-coder:14b
+  api_key: local
+  temperature: 0.1
+  timeout_s: 600
+agent:
+  max_iterations: 5
+  # Writable areas for the agent (relative to repo root)
+  writable_dirs: [rtl, tests, sdk, firmware, applications]

@@ -1,0 +1,10 @@
+# EDA/verification extras. Install inside WSL2/Linux (needs a C++ compiler).
+-r requirements.txt
+pyuvm
+cocotbext-axi
+pyvsc
+librelane
+litex
+fusesoc
+# Optional ML for python/ai_training (large):
+# torch

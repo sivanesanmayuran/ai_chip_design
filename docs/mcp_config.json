@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chip-flow": {
+      "command": "python",
+      "args": ["c:/Users/nxh00777/Desktop/JOB/startup/ai_chip_design/python/agents/mcp_server.py"]
+    }
+  }
+}

@@ -1,0 +1,2 @@
+# Pin constraints for the FPGA board (edit for your board / top module)
+# set_io pclk J3

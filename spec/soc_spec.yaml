@@ -1,0 +1,22 @@
+name: soc_top
+clock_mhz: 50
+bus: apb            # apb | axi-lite | wishbone
+cpu: picorv32       # picorv32 | vexriscv | none
+top_module: apb_gpio
+rtl_sources:
+  - rtl/peripherals/apb_gpio.sv
+peripherals:
+  - {name: gpio0, type: gpio, base: 0x40000000, width: 8}
+  - {name: uart0, type: uart, base: 0x40001000}
+  - {name: spi0,  type: spi,  base: 0x40002000}
+accelerators:       # future DSP / AI blocks
+  - {name: fir0, type: dsp_fir, base: 0x50000000}
+  - {name: mac0, type: ai_mac,  base: 0x50001000}
+fpga:
+  family: ice40
+  device: hx8k
+  package: ct256
+  constraints: flow/fpga/pins.pcf
+asic:
+  pdk: sky130A
+  config: flow/librelane/config.json

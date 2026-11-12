@@ -1,0 +1,8 @@
+{
+  "DESIGN_NAME": "apb_gpio",
+  "VERILOG_FILES": "dir::../../rtl/peripherals/apb_gpio.sv",
+  "CLOCK_PORT": "pclk",
+  "CLOCK_PERIOD": 20,
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 50
+}
